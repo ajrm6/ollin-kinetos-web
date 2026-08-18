@@ -3,218 +3,625 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Ollin Kinetos - Agencia líder en Automatización, Inteligencia Artificial y Desarrollo Web. Transformamos tu negocio con alta ingeniería tecnológica.">
-    <meta name="keywords" content="Automatización, IA, Inteligencia Artificial, Desarrollo Web, SEO, Ollin Kinetos, High Engineering">
-    <title>Ollin Kinetos | High Engineering & Automation</title>
+    <meta name="description" content="Ollin Kinetos - Agencia líder en Inteligencia Artificial, Automatización de Procesos, Desarrollo Web de Alto Rendimiento y Soporte IT. Transforma tu empresa hoy.">
+    <meta name="keywords" content="Ollin Kinetos, Automatización, Inteligencia Artificial, Agentes IA, Chatbots, Desarrollo Web, SEO, Make, Zapier, Python, High Engineering, Mexico">
+    <meta name="author" content="Ollin Kinetos">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#070D14">
     
+    <!-- Security Header Meta Directives -->
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
+
+    <title>Ollin Kinetos | High Engineering, IA & Automatización</title>
+    
+    <!-- Canonical URL for GitHub Pages / Custom Domain -->
+    <link rel="canonical" href="https://ollinkinetos.com/">
+
+    <!-- Open Graph / Facebook / WhatsApp -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ollinkinetos.com/">
+    <meta property="og:title" content="Ollin Kinetos | High Engineering & AI Automation">
+    <meta property="og:description" content="Evoluciona tu negocio con Inteligencia Artificial, automatizaciones avanzadas y plataformas web de código puro.">
+    <meta property="og:image" content="assets/images/logo.png">
+    <meta property="og:locale" content="es_MX">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Ollin Kinetos | High Engineering & AI Automation">
+    <meta name="twitter:description" content="Ingeniería tecnológica en movimiento. Inteligencia Artificial y Desarrollo Web.">
+    <meta name="twitter:image" content="assets/images/logo.png">
+
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;600;700;800;900&display=swap" rel="stylesheet">
     
-    <link rel="stylesheet" href="styles.css">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <!-- Schema.org JSON-LD Structured Data for Google SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "Ollin Kinetos",
+      "url": "https://ollinkinetos.com/",
+      "logo": "https://ollinkinetos.com/assets/images/logo_sinfondo.png",
+      "image": "https://ollinkinetos.com/assets/images/logo.png",
+      "description": "Agencia especializada en Inteligencia Artificial, Automatización de Procesos con Make/Zapier, Desarrollo Web de Alto Rendimiento e Infraestructura Tecnológica.",
+      "telephone": "+524612668518",
+      "email": "contacto@ollinkinetos.com",
+      "priceRange": "$$$",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "MX"
+      },
+      "openingHours": "Mo-Fr 09:00-18:00",
+      "sameAs": [
+        "https://wa.me/524612668518"
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Servicios Tecnológicos Ollin Kinetos",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Desarrollo Web & E-Commerce a Medida",
+              "description": "Landing pages, sitios corporativos y tiendas virtuales desarrolladas en código puro para máxima velocidad y conversión."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Asistente Comercial IA & Automatización",
+              "description": "Empleados digitales que atienden por WhatsApp 24/7 y automatizaciones de procesos de negocio."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Pólizas IT & Servidores en la Nube",
+              "description": "Soporte preventivo, respaldo en bóveda digital y configuración de servidores VPS/Locales."
+            }
+          }
+        ]
+      }
+    }
+    </script>
 </head>
 <body>
+
+    <!-- Header Navbar -->
     <header class="navbar">
         <div class="container nav-content">
-            <div class="logo">
-                <img src="image.png" alt="Ollin Kinetos Logo" class="logo-img">
-            </div>
-            <nav class="nav-links">
+            <a href="#inicio" class="logo-link" aria-label="Ollin Kinetos Inicio">
+                <img src="assets/images/logo_sinfondo.png" alt="Logotipo Ollin Kinetos High Tech" class="logo-img">
+            </a>
+
+            <nav class="nav-links" id="mainNav" aria-label="Navegación principal">
                 <a href="#servicios">Servicios</a>
-                <a href="#soluciones-ia">IA y Bots</a>
+                <a href="#soluciones-ia">Soluciones IA</a>
                 <a href="#paquetes">Paquetes</a>
+                <a href="#cotizador">Cotizador</a>
                 <a href="#contacto" class="btn btn-primary">Cotizar Proyecto</a>
             </nav>
-            <button class="mobile-menu-btn" aria-label="Menu">☰</button>
+
+            <button class="mobile-menu-btn" aria-label="Abrir menú de navegación" aria-expanded="false" aria-controls="mainNav">
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </button>
         </div>
     </header>
 
     <main>
+        <!-- Hero Section -->
         <section class="hero" id="inicio">
             <div class="container hero-content">
                 <div class="hero-text">
+                    <div class="hero-badge">
+                        <span class="pulse-dot"></span>
+                        High Tech & Artificial Intelligence 2026
+                    </div>
                     <h1 class="glow-text">Energía en Movimiento. <br><span class="text-gradient">High Engineering & Automation.</span></h1>
-                    <p class="subtitle">Evoluciona tu empresa con soluciones de Inteligencia Artificial, automatización de procesos y desarrollo web de alto rendimiento.</p>
+                    <p class="subtitle">Evoluciona tu empresa con soluciones de Inteligencia Artificial, empleados digitales conversacionales, automatización de procesos y plataformas web de código puro de alto rendimiento.</p>
                     <div class="hero-cta">
                         <a href="#contacto" class="btn btn-primary btn-large">Inicia tu Transformación</a>
-                        <a href="#servicios" class="btn btn-outline btn-large">Explorar Soluciones</a>
+                        <a href="#cotizador" class="btn btn-outline btn-large">Cotizador Instantáneo</a>
                     </div>
                 </div>
                 <div class="hero-visual">
                     <div class="cyber-circle">
                         <div class="inner-circle"></div>
-                        <img src="image.png" alt="Ollin Kinetos Symbol" class="floating-logo">
+                        <img src="assets/images/logo_sinfondo.png" alt="Emblema Ollin Kinetos Simbolo Infinito Tech" class="floating-logo">
                     </div>
                 </div>
             </div>
         </section>
 
+        <!-- Catalog / Services Section -->
         <section class="services" id="servicios">
             <div class="container">
                 <div class="section-header">
-                    <h2>Desarrollo Web & Presencia Digital</h2>
-                    <p>Infraestructuras digitales diseñadas para convertir, rankear y vender 24/7.</p>
+                    <span class="section-tag">Catálogo de Alta Ingeniería</span>
+                    <h2>Soluciones Tecnológicas a Medida</h2>
+                    <p>Infraestructuras digitales diseñadas para convertir, automatizar y escalar la rentabilidad de tu negocio.</p>
                 </div>
-                <div class="grid cards-grid">
-                    <div class="glass-card service-card">
-                        <div class="card-icon cyan">💻</div>
-                        <h3>Landing Pages & Web a Medida</h3>
-                        <p>Desde sitios ultra rápidos hasta plataformas robustas con código puro. Diseñadas para conversión y velocidad extrema.</p>
-                    </div>
-                    <div class="glass-card service-card">
-                        <div class="card-icon bronze">🛒</div>
-                        <h3>E-Commerce Avanzado</h3>
-                        <p>Tiendas en línea robustas. Filtros, integraciones logísticas y reglas de negocio adaptadas a tu inventario.</p>
-                    </div>
-                    <div class="glass-card service-card">
-                        <div class="card-icon blue">📈</div>
-                        <h3>Dominio SEO</h3>
-                        <p>Estrategias avanzadas para liderar resultados en Google. Arquitectura técnica y contenidos magnéticos.</p>
-                    </div>
+
+                <!-- Category Filter Tabs -->
+                <div class="filter-tabs" role="tablist">
+                    <button class="tab-btn active" data-filter="all" role="tab">Todos los Servicios</button>
+                    <button class="tab-btn" data-filter="web" role="tab">Web & Presencia Digital</button>
+                    <button class="tab-btn" data-filter="ia" role="tab">Inteligencia Artificial & Bots</button>
+                    <button class="tab-btn" data-filter="infrastructure" role="tab">Soporte & Infraestructura IT</button>
+                </div>
+
+                <div class="grid cards-grid" id="servicesContainer">
+
+                    <!-- Web Services -->
+                    <article class="glass-card service-card" data-category="web">
+                        <div class="card-icon">⚡</div>
+                        <h3>Landing Page Express</h3>
+                        <p>Volante digital ultra rápido optimizado para captar clientes inmediatos o lanzar campañas activas de ventas.</p>
+                        <ul class="card-features-list">
+                            <li>Formulario de contacto directo</li>
+                            <li>Integración con WhatsApp Business</li>
+                            <li>Diseño 100% responsivo para móviles</li>
+                        </ul>
+                        <span class="card-price-tag">Desde $4,000 MXN</span>
+                    </article>
+
+                    <article class="glass-card service-card" data-category="web">
+                        <div class="card-icon">💻</div>
+                        <h3>Landing Page a Medida (Código)</h3>
+                        <p>Plataforma exclusiva construida en código puro (HTML/CSS/JS) sin plantillas para máxima velocidad y seguridad.</p>
+                        <ul class="card-features-list">
+                            <li>Carga ultrarrápida (High Score Google)</li>
+                            <li>Diseño único y arquitectura limpia</li>
+                            <li>Conexión de datos y analítica integrada</li>
+                        </ul>
+                        <span class="card-price-tag">Desde $8,000 MXN</span>
+                    </article>
+
+                    <article class="glass-card service-card" data-category="web">
+                        <div class="card-icon">🏢</div>
+                        <h3>Sitio Corporativo Estándar</h3>
+                        <p>La sede central de tu empresa en internet. Genera formalidad, confianza y catálogo completo para tus clientes.</p>
+                        <ul class="card-features-list">
+                            <li>Hasta 5 secciones principales</li>
+                            <li>Panel para auto-edición básica</li>
+                            <li>Seguridad y blindaje inicial anti-hackeo</li>
+                        </ul>
+                        <span class="card-price-tag">Desde $12,000 MXN</span>
+                    </article>
+
+                    <article class="glass-card service-card" data-category="web">
+                        <div class="card-icon">🛒</div>
+                        <h3>Tienda en Línea E-Commerce</h3>
+                        <p>Sucursal 24/7 para vender productos físicos o digitales con pasarelas de pago y reglas de inventario.</p>
+                        <ul class="card-features-list">
+                            <li>Carrito de compras y pasarela Stripe/MercadoPago</li>
+                            <li>Carga inicial de catálogo y categorías</li>
+                            <li>Filtros avanzados y cuentas de usuario</li>
+                        </ul>
+                        <span class="card-price-tag">Desde $15,000 MXN</span>
+                    </article>
+
+                    <article class="glass-card service-card" data-category="web">
+                        <div class="card-icon">📈</div>
+                        <h3>Optimización SEO Dominio Google</h3>
+                        <p>Estrategia de arquitectura técnica e indexación para liderar las primeras posiciones de búsqueda en tu industria.</p>
+                        <ul class="card-features-list">
+                            <li>Indexación y métricas Google Search Console</li>
+                            <li>Etiquetas, metadatos y Schema.org</li>
+                            <li>Optimización de velocidad y estructura</li>
+                        </ul>
+                        <span class="card-price-tag">Desde $5,000 MXN</span>
+                    </article>
+
+                    <!-- AI Services -->
+                    <article class="glass-card service-card" data-category="ia">
+                        <div class="card-icon">💬</div>
+                        <h3>Chatbot Básico (Flujos)</h3>
+                        <p>Conmutador automático por WhatsApp para filtrar prospectos, calificar dudas y atender clientes 24/7 sin demora.</p>
+                        <ul class="card-features-list">
+                            <li>Menú interactivo de hasta 5 opciones</li>
+                            <li>Respuestas a preguntas frecuentes (FAQs)</li>
+                            <li>Mensajes automáticos de bienvenida y horario</li>
+                        </ul>
+                        <span class="card-price-tag">Desde $3,500 MXN</span>
+                    </article>
+
+                    <article class="glass-card service-card" data-category="ia">
+                        <div class="card-icon">🤖</div>
+                        <h3>Asistente Comercial IA</h3>
+                        <p>Empleado digital capacitado con el conocimiento de tu empresa que atiende, cotiza y cierra ventas por WhatsApp.</p>
+                        <ul class="card-features-list">
+                            <li>Entrenado con manuales y PDFs corporativos</li>
+                            <li>Comprensión de lenguaje natural conversacional</li>
+                            <li>Prompts de seguridad y filtrado comercial</li>
+                        </ul>
+                        <span class="card-price-tag">Desde $10,000 MXN</span>
+                    </article>
+
+                    <article class="glass-card service-card" data-category="ia">
+                        <div class="card-icon">🔄</div>
+                        <h3>Automatización de Procesos</h3>
+                        <p>Conexión entre tus sistemas (Web, CRM, ERP, Google Sheets) eliminando tareas repetitivas y cuellos de botella.</p>
+                        <ul class="card-features-list">
+                            <li>Integraciones mediante Make / Zapier / Python</li>
+                            <li>Sincronización automática de prospectos</li>
+                            <li>Eliminación de errores por trabajo manual</li>
+                        </ul>
+                        <span class="card-price-tag">Desde $15,000 MXN</span>
+                    </article>
+
+                    <article class="glass-card service-card" data-category="ia">
+                        <div class="card-icon">📊</div>
+                        <h3>Dashboard Analítico IA</h3>
+                        <p>Panel directivo de control predictivo para el dueño del negocio. Toma decisiones basadas en datos reales.</p>
+                        <ul class="card-features-list">
+                            <li>Conexión de bases de datos e historial</li>
+                            <li>Gráficas métricas clave en tiempo real</li>
+                            <li>Modelos predictivos de ventas y tendencias</li>
+                        </ul>
+                        <span class="card-price-tag">Desde $15,000 MXN</span>
+                    </article>
+
+                    <!-- IT Services -->
+                    <article class="glass-card service-card" data-category="infrastructure">
+                        <div class="card-icon">🛠️</div>
+                        <h3>Visita Técnica Preventiva</h3>
+                        <p>Diagnóstico y resolución inmediata de fallas críticas en computadoras, redes o software en tu oficina.</p>
+                        <ul class="card-features-list">
+                            <li>Limpieza de virus y optimización de velocidad</li>
+                            <li>Diagnóstico técnico de hardware y sistema</li>
+                            <li>Solución de bloqueos e interrupciones</li>
+                        </ul>
+                        <span class="card-price-tag">Desde $600 MXN / equipo</span>
+                    </article>
+
+                    <article class="glass-card service-card" data-category="infrastructure">
+                        <div class="card-icon">🛡️</div>
+                        <h3>Bóveda en la Nube (Respaldo)</h3>
+                        <p>Sistema automático de copia de seguridad para evitar la pérdida de información ante fallas o robos de equipos.</p>
+                        <ul class="card-features-list">
+                            <li>Configuración en Google Workspace / OneDrive</li>
+                            <li>Sincronización automática de archivos clave</li>
+                            <li>Pruebas de recuperación de desastres</li>
+                        </ul>
+                        <span class="card-price-tag">Desde $3,000 MXN (Setup)</span>
+                    </article>
+
+                    <article class="glass-card service-card" data-category="infrastructure">
+                        <div class="card-icon">🌐</div>
+                        <h3>Servidor Local o VPS en Nube</h3>
+                        <p>Arquitectura central para alojar sistemas internos, bases de datos o software contable accesible entre sucursales.</p>
+                        <ul class="card-features-list">
+                            <li>Configuración Windows Server / Linux VPS</li>
+                            <li>Creación de permisos y usuarios seguros</li>
+                            <li>Migración e interconexión de bases de datos</li>
+                        </ul>
+                        <span class="card-price-tag">Desde $15,000 MXN</span>
+                    </article>
+
                 </div>
             </div>
         </section>
 
+        <!-- AI Deep Dive Section -->
         <section class="ai-solutions dark-section" id="soluciones-ia">
             <div class="container">
                 <div class="section-header">
-                    <h2>Inteligencia Artificial y Automatización</h2>
-                    <p>Empleados digitales y procesos optimizados que operan sin descanso.</p>
+                    <span class="section-tag">Fuerza Laboral del Futuro</span>
+                    <h2>Inteligencia Artificial Aplicada a Negocios</h2>
+                    <p>Agentes inteligentes y automatización sin descanso para maximizar tu capacidad operativa.</p>
                 </div>
                 <div class="grid grid-2">
                     <div class="ai-feature">
                         <div class="feature-content">
-                            <h3>Asistente Comercial IA</h3>
-                            <p>Un empleado digital que atiende, califica y cierra ventas por WhatsApp y Web las 24 horas del día. Entrenado con los datos de tu empresa.</p>
+                            <h3>🤖 Asistente Comercial IA 24/7</h3>
+                            <p>Un agente digital capaz de entender intenciones complejas, responder preguntas de tus servicios y agendar citas automáticamente en tu calendario desde WhatsApp.</p>
                         </div>
                     </div>
                     <div class="ai-feature">
                         <div class="feature-content">
-                            <h3>Dashboard Analítico IA</h3>
-                            <p>Panel directivo con predicciones basadas en tus bases de datos. Toma decisiones respaldadas por algoritmos, no por intuición.</p>
+                            <h3>📈 Dashboard Analítico Directivo</h3>
+                            <p>Transformamos hojas de cálculo dispersas en un cuadro de mando integral interactivo con recomendaciones generadas por IA para la alta dirección.</p>
                         </div>
                     </div>
                     <div class="ai-feature">
                         <div class="feature-content">
-                            <h3>Automatización de Procesos</h3>
-                            <p>Conectamos tus sistemas (CRMs, ERPs, Web) eliminando cuellos de botella y tareas manuales repetitivas.</p>
+                            <h3>⚡ Motor de Automatización Operativa</h3>
+                            <p>Conectamos tu sitio web con tu CRM, sistema de facturación e inventario para que cada venta gatille el flujo administrativo sin intervención humana.</p>
                         </div>
                     </div>
                     <div class="ai-feature">
                         <div class="feature-content">
-                            <h3>Motor de Contenido IA</h3>
-                            <p>Entorno privado de inteligencia generativa para acelerar tu marketing y producción de textos persuasivos.</p>
+                            <h3>✍️ Motor de Generación de Contenido Privado</h3>
+                            <p>Entorno privado de IA generativa configurado con el tono de voz de tu marca para crear propuestas, correos y copys de marketing en segundos.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
+        <!-- Packages & Ecosystems Section -->
         <section class="packages" id="paquetes">
             <div class="container">
                 <div class="section-header">
-                    <h2>Ecosistemas Tecnológicos</h2>
-                    <p>Soluciones integrales diseñadas para el nivel de madurez de tu negocio.</p>
+                    <span class="section-tag">Paquetes Integrales</span>
+                    <h2>Ecosistemas Tecnológicos Garantizados</h2>
+                    <p>Kits integrales con descuento diseñados para el nivel de crecimiento de tu empresa.</p>
                 </div>
+                
                 <div class="pricing-grid">
+                    
                     <div class="pricing-card">
                         <h3>Arranque Digital</h3>
-                        <div class="price">Para validación rápida</div>
+                        <div class="price">$10,000 - $15,000 MXN</div>
                         <ul class="features-list">
-                            <li>Landing Page Express</li>
-                            <li>Chatbot Básico (WA)</li>
-                            <li>Ficha Google Mi Negocio</li>
+                            <li>Landing Page Express ultrarrápida</li>
+                            <li>Chatbot Básico para WhatsApp</li>
+                            <li>Ficha de Google Mi Negocio configurada</li>
+                            <li>Soporte y entrega en tiempo récord</li>
                         </ul>
-                        <a href="#contacto" class="btn btn-outline">Consultar</a>
+                        <a href="#contacto" class="btn btn-outline">Solicitar Paquete</a>
                     </div>
+
                     <div class="pricing-card featured">
-                        <div class="badge">Recomendado</div>
+                        <div class="badge">Más Solicitado</div>
                         <h3>Ecosistema Digital PyME</h3>
-                        <div class="price">Infraestructura Completa</div>
+                        <div class="price">$25,000 - $35,000 MXN</div>
                         <ul class="features-list">
-                            <li>Web Corporativa Estándar</li>
-                            <li>Bóveda Workspace</li>
-                            <li>SEO Inicial</li>
-                            <li>Póliza IT (1er mes)</li>
+                            <li>Sitio Web Corporativo Estándar (5 Secciones)</li>
+                            <li>Bóveda de Respaldo en la Nube</li>
+                            <li>Optimización SEO Inicial en Google</li>
+                            <li>1er mes de Póliza IT y Soporte Incluido</li>
                         </ul>
-                        <a href="#contacto" class="btn btn-primary">Consultar</a>
+                        <a href="#contacto" class="btn btn-primary">Adquirir Ecosistema</a>
                     </div>
+
                     <div class="pricing-card">
                         <h3>Ecosistema Total de IA</h3>
-                        <div class="price">Empresa Inteligente</div>
+                        <div class="price">$40,000 - $65,000 MXN</div>
                         <ul class="features-list">
-                            <li>Asistente Comercial IA</li>
-                            <li>Motor de Contenido IA</li>
-                            <li>Automatización de Operaciones</li>
+                            <li>Asistente Comercial IA en WhatsApp</li>
+                            <li>Motor de Contenido Generativo Privado</li>
+                            <li>Automatización de 1 Flujo Completo</li>
                             <li>Dashboard Analítico Directivo</li>
                         </ul>
-                        <a href="#contacto" class="btn btn-outline">Consultar</a>
+                        <a href="#contacto" class="btn btn-outline">Solicitar Paquete IA</a>
+                    </div>
+
+                </div>
+
+                <!-- Monthly Policies Sub-Section -->
+                <div style="margin-top: 5rem;">
+                    <div class="section-header" style="margin-bottom: 2.5rem;">
+                        <span class="section-tag">Tranquilidad Continua</span>
+                        <h2>Seguro Operativo & Pólizas Mensuales</h2>
+                        <p>Mantén tu tecnología blindada, tus sistemas en línea y tu IA actualizada constantemente.</p>
+                    </div>
+
+                    <div class="pricing-grid">
+                        <div class="glass-card" style="text-align: center;">
+                            <h3>Póliza Mantenimiento Web</h3>
+                            <div class="card-price-tag" style="margin: 1rem auto;">$1,500 - $2,500 MXN / mes</div>
+                            <p>Monitoreo 24/7, servidor hosting, respaldos semanales y cambios de texto/fotos sin costo extra.</p>
+                        </div>
+                        <div class="glass-card" style="text-align: center;">
+                            <h3>Póliza Mantenimiento IA</h3>
+                            <div class="card-price-tag" style="margin: 1rem auto;">$2,500 - $5,000 MXN / mes</div>
+                            <p>Auditoría de conversaciones, afinación de prompts de la IA y actualización del cerebro del bot.</p>
+                        </div>
+                        <div class="glass-card" style="text-align: center;">
+                            <h3>Póliza Soporte IT Oficina</h3>
+                            <div class="card-price-tag" style="margin: 1rem auto;">$500 - $800 MXN / equipo / mes</div>
+                            <p>Soporte remoto ilimitado, mantenimiento físico de equipos y atención inmediata a problemas de red.</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="contact" id="contacto">
+        <!-- Interactive Quote Calculator (Cotizador Excel Match) -->
+        <section class="calculator-section" id="cotizador">
             <div class="container">
-                <div class="glass-panel contact-panel">
-                    <div class="contact-info">
-                        <h2>Inicia tu Evolución Tecnológica hoy.</h2>
-                        <p>Déjanos tus datos para agendar una auditoría o recibir una cotización a la medida.</p>
-                        <div class="contact-methods">
-                            <p>📞 +52 461 266 8518</p>
-                            <p>✉️ contacto@ollinkinetos.com</p>
+                <div class="section-header">
+                    <span class="section-tag">Calculadora Transparente</span>
+                    <h2>Cotizador Interactivo de Proyectos</h2>
+                    <p>Selecciona las especificaciones de tu proyecto para obtener un presupuesto estimado en tiempo real.</p>
+                </div>
+
+                <div class="calculator-card">
+                    <div class="calc-grid">
+                        <div class="calc-inputs">
+                            <div class="calc-option-group">
+                                <label for="calcBaseService">1. Selecciona el Servicio Base:</label>
+                                <select id="calcBaseService" class="calc-select">
+                                    <option value="4000">Landing Page Express ($4,000 MXN)</option>
+                                    <option value="8000">Landing Page a Medida en Código ($8,000 MXN)</option>
+                                    <option value="12000" selected>Sitio Corporativo Estándar ($12,000 MXN)</option>
+                                    <option value="20000">Sitio Corporativo Avanzado ($20,000 MXN)</option>
+                                    <option value="15000">Tienda en Línea E-Commerce ($15,000 MXN)</option>
+                                    <option value="10000">Asistente Comercial IA ($10,000 MXN)</option>
+                                    <option value="15000">Automatización de Procesos ($15,000 MXN)</option>
+                                    <option value="25000">Ecosistema Digital PyME ($25,000 MXN)</option>
+                                </select>
+                            </div>
+
+                            <div class="calc-option-group">
+                                <label for="calcUrgency">2. Nivel de Urgencia en Entrega:</label>
+                                <select id="calcUrgency" class="calc-select">
+                                    <option value="1.0" selected>Tiempo Estándar / Normal</option>
+                                    <option value="1.25">Entrega Rápida (+25% prioridad)</option>
+                                    <option value="1.50">Entrega Urgencia Extrema (+50% velocidad)</option>
+                                </select>
+                            </div>
+
+                            <div class="calc-option-group">
+                                <label for="calcExtraPages">3. Secciones / Páginas Adicionales:</label>
+                                <input type="number" id="calcExtraPages" class="calc-input" min="0" max="20" value="0" placeholder="0">
+                            </div>
+
+                            <div class="calc-option-group">
+                                <label for="calcApiIntegrations">4. Integraciones de APIs / Sistemas Externos:</label>
+                                <input type="number" id="calcApiIntegrations" class="calc-input" min="0" max="10" value="0" placeholder="0">
+                            </div>
+
+                            <div class="calc-option-group">
+                                <div class="checkbox-group">
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" id="calcContentModule">
+                                        Incluir Maquila y Redacción de Contenidos (+ $4,000 MXN)
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="calc-result-box">
+                            <div>
+                                <h3>Resumen de Inversión</h3>
+                                <p style="font-size: 0.85rem; margin-bottom: 1.5rem;">Cálculo estimado basado en parámetros estándar.</p>
+                                
+                                <div class="calc-breakdown">
+                                    <div class="calc-row">
+                                        <span>Subtotal Estimado:</span>
+                                        <strong id="calcSubtotal">$12,000 MXN</strong>
+                                    </div>
+                                    <div class="calc-row">
+                                        <span>Recargo por Urgencia:</span>
+                                        <span id="calcUrgencyFee">$0 MXN</span>
+                                    </div>
+                                </div>
+
+                                <div class="calc-total-row">
+                                    <span>Total Estimado:</span>
+                                    <div class="calc-total-amount" id="calcTotal">$12,000 MXN</div>
+                                </div>
+                            </div>
+
+                            <div style="margin-top: 2rem;">
+                                <a href="#" id="sendCalcWaBtn" target="_blank" rel="noopener noreferrer" class="btn btn-accent btn-large btn-block">
+                                    Enviar Cotización por WhatsApp 💬
+                                </a>
+                            </div>
                         </div>
                     </div>
-                    <form class="contact-form" id="leadForm">
-                        <div class="form-group">
-                            <label for="name">Nombre / Empresa</label>
-                            <input type="text" id="name" required>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact" id="contacto">
+            <div class="container">
+                <div class="contact-panel">
+                    <div class="contact-info">
+                        <h2>Inicia tu Evolución Tecnológica Hoy.</h2>
+                        <p>Déjanos tus datos para agendar una sesión de auditoría técnica o recibir una propuesta comercial a la medida de tu empresa.</p>
+                        
+                        <div class="contact-methods">
+                            <a href="tel:+524612668518" class="contact-method-item">
+                                <div class="contact-icon">📞</div>
+                                <span>+52 461 266 8518</span>
+                            </a>
+                            <a href="mailto:contacto@ollinkinetos.com" class="contact-method-item">
+                                <div class="contact-icon">✉️</div>
+                                <span>contacto@ollinkinetos.com</span>
+                            </a>
+                            <div class="contact-method-item">
+                                <div class="contact-icon">📍</div>
+                                <span>Celaya, Guanajuato, México</span>
+                            </div>
                         </div>
+                    </div>
+
+                    <form class="contact-form" id="leadForm" novalidate>
+                        <!-- Anti-spam Honeypot Field -->
+                        <input type="text" name="website_url_check" class="honeypot-field" tabindex="-1" autocomplete="off">
+
                         <div class="form-group">
-                            <label for="email">Correo Electrónico</label>
-                            <input type="email" id="email" required>
+                            <label for="name">Nombre Completo / Empresa *</label>
+                            <input type="text" id="name" required placeholder="Ej. Carlos Mendoza - Empresa SA">
                         </div>
+
                         <div class="form-group">
-                            <label for="service">Servicio de Interés</label>
+                            <label for="email">Correo Electrónico *</label>
+                            <input type="email" id="email" required placeholder="ejemplo@empresa.com">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Teléfono / WhatsApp</label>
+                            <input type="tel" id="phone" placeholder="+52 461 000 0000">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="service">Servicio o Paquete de Interés</label>
                             <select id="service">
-                                <option>Desarrollo Web / E-Commerce</option>
-                                <option>Inteligencia Artificial / Bots</option>
-                                <option>Soporte IT / Servidores</option>
-                                <option>Ecosistema Completo</option>
+                                <option value="Desarrollo Web / E-Commerce">Desarrollo Web / E-Commerce</option>
+                                <option value="Inteligencia Artificial / Chatbots">Inteligencia Artificial / Chatbots</option>
+                                <option value="Automatizacion de Procesos">Automatización de Procesos (Make/Zapier)</option>
+                                <option value="Soporte IT / Servidores Nube">Soporte IT / Servidores en la Nube</option>
+                                <option value="Ecosistema Digital Completo">Ecosistema Digital Completo</option>
                             </select>
                         </div>
-                        <button type="submit" class="btn btn-primary btn-block">Solicitar Propuesta</button>
+
+                        <div class="form-group">
+                            <label for="message">Detalles adicionales del Proyecto</label>
+                            <textarea id="message" rows="3" placeholder="Describe brevemente tus objetivos o requerimientos..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-block btn-large">Solicitar Propuesta Comercial</button>
                     </form>
                 </div>
             </div>
         </section>
     </main>
 
+    <!-- Footer -->
     <footer>
         <div class="container footer-content">
             <div class="footer-brand">
-                <img src="image.png" alt="Ollin Kinetos" class="footer-logo">
-                <p>Energía en Movimiento. <br>High Engineering & Automation.</p>
+                <img src="assets/images/logo_sinfondo.png" alt="Ollin Kinetos Logotipo Footer" class="footer-logo" style="height: 44px;">
+                <p>Energía en Movimiento. <br>High Engineering & AI Automation.</p>
             </div>
             <div class="footer-links">
-                <h4>Legal</h4>
+                <h4>Navegación</h4>
+                <a href="#servicios">Servicios</a>
+                <a href="#soluciones-ia">Soluciones IA</a>
+                <a href="#paquetes">Paquetes</a>
+                <a href="#cotizador">Cotizador</a>
+            </div>
+            <div class="footer-links">
+                <h4>Legal & Privacidad</h4>
                 <a href="#">Aviso de Privacidad</a>
-                <a href="#">Términos y Condiciones</a>
+                <a href="#">Términos del Servicio</a>
+                <a href="#">Seguridad de Datos</a>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2026 Ollin Kinetos. Todos los derechos reservados.</p>
+            <p>&copy; 2026 Ollin Kinetos. Todos los derechos reservados. | High Engineering Technology.</p>
         </div>
     </footer>
 
-    <!-- WhatsApp Floating Button -->
-    <a href="https://wa.me/524612668518" class="wa-float" target="_blank" aria-label="Chat on WhatsApp">
+    <!-- WhatsApp Floating Action Button -->
+    <a href="https://wa.me/524612668518?text=Hola%20Ollin%20Kinetos!%20Me%20interesa%20recibir%20informaci%C3%B3n%20sobre%20sus%20servicios." class="wa-float" target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp">
         <svg viewBox="0 0 32 32" width="32" height="32" fill="currentColor">
             <path d="M16 2a13.9 13.9 0 0 0-11.8 21.2l-1.9 5.5 5.7-1.9A13.9 13.9 0 1 0 16 2zm0 25.3a11.3 11.3 0 0 1-5.8-1.6l-.4-.2-3.8 1.3 1.3-3.7-.3-.4A11.3 11.3 0 1 1 16 27.3z"/>
             <path d="M21.8 20.2c-.3-.2-1.8-.9-2.1-1-.3-.1-.5-.1-.7.1s-.8 1-.9 1.2c-.2.2-.4.2-.7.1a8.6 8.6 0 0 1-4.2-2.6 9.4 9.4 0 0 1-2-2.6c-.2-.3 0-.4.1-.6l.5-.7c.2-.2.3-.4.4-.6a1.5 1.5 0 0 0-.1-1.3c-.1-.3-.7-1.7-1-2.4-.2-.6-.5-.5-.7-.5h-.5c-.2 0-.6.1-.9.4a2.7 2.7 0 0 0-.8 2c0 1.2.9 2.4 1 2.6s1.8 2.7 4.3 3.8c2.1.9 2.5.9 3 .8.5-.1 1.6-.7 1.8-1.3.2-.7.2-1.3.1-1.4-.1-.3-.3-.4-.6-.5z"/>
         </svg>
     </a>
 
-    <script src="script.js"></script>
+    <!-- Scripts -->
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
