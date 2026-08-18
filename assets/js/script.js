@@ -77,68 +77,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // ----------------------------------------------------------------------
-    // 4. Interactive Quote Calculator (Cotizador Excel Match)
-    // ----------------------------------------------------------------------
-    const calcBaseSelect = document.getElementById('calcBaseService');
-    const calcUrgencySelect = document.getElementById('calcUrgency');
-    const calcExtraPagesInput = document.getElementById('calcExtraPages');
-    const calcApiIntegrationsInput = document.getElementById('calcApiIntegrations');
-    const calcContentModuleCheckbox = document.getElementById('calcContentModule');
-    
-    const calcSubtotalElem = document.getElementById('calcSubtotal');
-    const calcUrgencyFeeElem = document.getElementById('calcUrgencyFee');
-    const calcTotalElem = document.getElementById('calcTotal');
-    const sendCalcWaBtn = document.getElementById('sendCalcWaBtn');
-
-    function calculateQuote() {
-        if (!calcBaseSelect) return;
-
-        const basePrice = parseFloat(calcBaseSelect.value) || 0;
-        const urgencyMult = parseFloat(calcUrgencySelect.value) || 1.0;
-        const extraPages = Math.max(0, parseInt(calcExtraPagesInput.value) || 0);
-        const extraApis = Math.max(0, parseInt(calcApiIntegrationsInput.value) || 0);
-        const hasContentModule = calcContentModuleCheckbox ? calcContentModuleCheckbox.checked : false;
-
-        const extraPagesCost = extraPages * 1000; // $1,000 MXN per extra page
-        const apisCost = extraApis * 1500; // $1,500 MXN per API integration
-        const contentCost = hasContentModule ? 4000 : 0; // $4,000 MXN copywriting/media module
-
-        const subtotal = basePrice + extraPagesCost + apisCost + contentCost;
-        const total = subtotal * urgencyMult;
-        const urgencyFee = total - subtotal;
-
-        const formatMXN = (val) => new Intl.NumberFormat('es-MX', { style: 'currency', currency: 'MXN', maximumFractionDigits: 0 }).format(val);
-
-        if (calcSubtotalElem) calcSubtotalElem.textContent = formatMXN(subtotal);
-        if (calcUrgencyFeeElem) calcUrgencyFeeElem.textContent = urgencyFee > 0 ? `+ ${formatMXN(urgencyFee)}` : '$0 MXN';
-        if (calcTotalElem) calcTotalElem.textContent = formatMXN(total);
-
-        // Update WhatsApp Send Button link dynamically
-        if (sendCalcWaBtn) {
-            const selectedOptionText = calcBaseSelect.options[calcBaseSelect.selectedIndex].text;
-            const urgencyText = calcUrgencySelect.options[calcUrgencySelect.selectedIndex].text;
-            
-            const message = `Hola Ollin Kinetos! 👋 Me interesa cotizar un proyecto:%0A` +
-                `📌 *Servicio*: ${selectedOptionText}%0A` +
-                `⚡ *Urgencia*: ${urgencyText}%0A` +
-                `📄 *Páginas Extra*: ${extraPages}%0A` +
-                `🔌 *Integraciones API*: ${extraApis}%0A` +
-                `✍️ *Maquila de Contenido*: ${hasContentModule ? 'Sí' : 'No'}%0A` +
-                `💰 *Estimación Calculada*: ${formatMXN(total)} MXN%0A%0A` +
-                `¿Podemos agendar una breve sesión para detallar la propuesta?`;
-
-            sendCalcWaBtn.href = `https://wa.me/524612668518?text=${message}`;
-        }
-    }
-
-    if (calcBaseSelect) {
-        [calcBaseSelect, calcUrgencySelect, calcExtraPagesInput, calcApiIntegrationsInput, calcContentModuleCheckbox].forEach(elem => {
-            if (elem) elem.addEventListener('change', calculateQuote);
-            if (elem) elem.addEventListener('input', calculateQuote);
-        });
-        calculateQuote(); // Initial calculation on load
-    }
 
     // ----------------------------------------------------------------------
     // 5. Contact Form Handler with XSS Sanitization & Honeypot Anti-Spam
